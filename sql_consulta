@@ -1,0 +1,16 @@
+select
+	pessoa.pessoa_id,
+	pessoa.nome,
+	pessoaa.cpf,
+	pessoa.idade,
+	pessoa.sexo,
+	endereco.tipo,
+	endereco.logradouro,
+	endereco.numero,
+	endereco.complemento,
+	endereco.cep,
+	endereco.cidade,
+	endereco.estado 
+from
+	pessoa
+	inner join endereco on pessoa.pessoa_id = endereco.pessoa_id;
