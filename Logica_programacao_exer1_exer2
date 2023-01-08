@@ -1,0 +1,90 @@
+programa 
+{
+  inclua biblioteca Matematica --> mat
+  
+  funcao inicio() 
+  {
+    inteiro exer
+
+    faca
+    { 
+      escreva ("AVALIACAO DE CONHECIMENTO \n")
+      escreva ("Logica de programação em Portugol \n")
+      escreva ("\n--------------------------------------------------------\n")   
+      escreva ("Informe - 1 ou 2 -  para executar o exercicio que deseja. \n")
+      escreva ("ou, informe 0 para sair! \n")
+      escreva ("----------------------------------------------------------\n")
+      escreva ("Exercicio: ")
+      leia (exer)
+      escreva ("----------------------------------------------------------\n")
+      escreva ("\n")
+        
+
+      escolha (exer)
+      {
+        caso 1:
+          exercicio1()
+        pare  
+        caso 2:
+          exercicio2()
+        pare
+      }
+    }
+    enquanto (exer != 0)
+    escreva ("OBRIGADA! \n")
+    escreva ("Aluna: Gezeli Backes \n")
+  }
+    
+  funcao exercicio1() 
+  {
+    real num1
+		real num2
+    
+    escreva ("-------------------------------------------------------------\n")   
+    escreva ("Faça um algoritmo que receba dois números e ao final mostre  \n")
+    escreva ("a soma, subtração, divisão e multiplicação dos números lidos.\n")
+    escreva ("-------------------------------------------------------------\n \n")
+    
+    escreva ("Informe o primeiro número: ")
+    leia(num1)
+
+		escreva ("Informe o segundo número: ")
+    leia(num2) 
+
+		escreva ("\n----------------------------------------------\n")
+    escreva ("              RESULTADOS \n")
+    escreva ("----------------------------------------------\n")
+    escreva ("A soma entre os numeros é ", num1+num2, "\n")
+		escreva ("A subtração entre os numeros é ", num1-num2, "\n")
+		escreva ("A multiplicação entre os numeros é ", num1*num2, "\n")
+		escreva ("A divisão entre os numeros é ", num1/num2, "\n")
+    escreva ("----------------------------------------------\n")
+
+  }
+
+  funcao exercicio2() 
+  {
+    real qtda
+		real cot
+    real reais
+
+    escreva ("--------------------------------------------------------------------------------------\n")   
+    escreva ("Elaborar um algoritmo que efetue a apresentação do valor de conversão em (R$) de um   \n")
+    escreva ("valor lido em dólar (US$). O algoritmo deve solicitar o valor da cotação do dólar e a \n")
+    escreva ("quantidade de dólares disponíveis com o usuário. \n")
+    escreva ("--------------------------------------------------------------------------------------\n\n") 
+
+		escreva ("Informe a quantidade de $ que deseja converter: ")
+		leia(qtda)
+		escreva ("Informe a cotação atual do $ : ")
+		leia(cot)
+    reais = mat.arredondar(qtda*cot,2)
+
+    escreva ("\n----------------------------------------------------------------------\n")  
+    escreva ("                       CONVERSAO $ -> R$     \n")  
+    escreva ("----------------------------------------------------------------------\n") 
+    escreva ("-> ",qtda, " dolares cotados a $", cot, " equivalem a R$", reais, ".\n")
+    escreva ("----------------------------------------------------------------------\n") 
+  } 
+  
+}
