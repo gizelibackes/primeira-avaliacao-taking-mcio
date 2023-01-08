@@ -1,6 +1,4 @@
-Tabela (Pessoa) 
-
-CREATE TABLE pessoa_gezeli 
+CREATE TABLE pessoa
 (
 		pessoa_id INT NOT NULL AUTO_INCREMENT,
 		nome VARCHAR(200),
@@ -11,4 +9,4 @@ CREATE TABLE pessoa_gezeli
 );
 
 Consulta para trazer as informações:
-select *from pessoa_gezeli;
+select *from pessoa;
