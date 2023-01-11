@@ -10,7 +10,7 @@ CREATE TABLE endereco (
 		pessoa_id INT,
 		PRIMARY KEY(endereco_id),
 		FOREIGN KEY(pessoa_id) 
-		REFERENCES pessoa_avilla(pessoa_id)
+		REFERENCES pessoa(pessoa_id)
 	);
 
 Consulta para trazer as informações:
